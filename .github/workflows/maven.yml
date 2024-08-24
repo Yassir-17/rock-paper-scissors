@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: 1.8
+        distribution: jdk
         
     - name: Step 3 - Have Github Actions Build Maven project
       run: mvn -B package --file pom.xml
